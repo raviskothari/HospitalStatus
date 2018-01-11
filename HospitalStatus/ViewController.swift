@@ -41,6 +41,7 @@ class ViewController: UIViewController {
             princetonHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countPrinceton = 0
         }
+        UserDefaults.standard.set(princetonHospitalButtonText.currentTitle, forKey: "princeton")
     }
     
     //Method to determine what happens if Regional hospital button is pressed
@@ -62,6 +63,7 @@ class ViewController: UIViewController {
             regionalHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countRegional = 0
         }
+        UserDefaults.standard.set(regionalHospitalButtonText.currentTitle, forKey: "regional")
     }
     
     //Method to determine what happens if Hopewell hospital button is pressed
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
             hopewellHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countHopewell = 0
         }
+        UserDefaults.standard.set(hopewellHospitalButtonText.currentTitle, forKey: "hopewell")
     }
     
     //Method to determine what happens if New Bruswick hospital button is pressed
@@ -92,6 +95,7 @@ class ViewController: UIViewController {
             newBrunswickHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countNewBrunswick = 0
         }
+        UserDefaults.standard.set(newBrunswickHospitalButtonText.currentTitle, forKey: "nb")
     }
     
     //Method to determine what happens if Hamilton hospital button is pressed
@@ -105,6 +109,7 @@ class ViewController: UIViewController {
             hamiltonHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countHamilton = 0
         }
+        UserDefaults.standard.set(hamiltonHospitalButtonText.currentTitle, forKey: "hamilton")
     }
     
     //Method to determine what happens if Francis hospital button is pressed
@@ -118,6 +123,7 @@ class ViewController: UIViewController {
             francisHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countFrancis = 0
         }
+        UserDefaults.standard.set(francisHospitalButtonText.currentTitle, forKey: "francis")
     }
     
     //Method to determine what happens if Peters hospital button is pressed
@@ -131,17 +137,111 @@ class ViewController: UIViewController {
             petersHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
             countPeters = 0
         }
+        UserDefaults.standard.set(petersHospitalButtonText.currentTitle, forKey: "peters")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefualts = UserDefaults.standard
+        let userDefaults = UserDefaults.standard
+        
+        let currentPrincetonText = userDefaults.object(forKey: "princeton")
+        if let firstLabelPrinceton = currentPrincetonText as? String {
+            princetonHospitalButtonText.setTitle(firstLabelPrinceton, for: UIControlState.normal)
+            if firstLabelPrinceton == "Open" {
+                princetonHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countPrinceton = 0
+            } else if firstLabelPrinceton == "Psych Divert" {
+                princetonHospitalButtonText.setTitleColor(UIColor.yellow, for: UIControlState.normal)
+                countPrinceton = 1
+            } else {
+                princetonHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countPrinceton = 2
+            }
+        }
+        
+        let currentRegionalText = userDefaults.object(forKey: "regional")
+        if let firstLabelRegional = currentRegionalText as? String {
+            regionalHospitalButtonText.setTitle(firstLabelRegional, for: UIControlState.normal)
+            if firstLabelRegional == "Open" {
+                regionalHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countRegional = 0
+            } else if firstLabelRegional == "Psych Divert" {
+                regionalHospitalButtonText.setTitleColor(UIColor.yellow, for: UIControlState.normal)
+                countRegional = 1
+            } else if firstLabelRegional == "Trauma Divert" {
+                regionalHospitalButtonText.setTitleColor(UIColor.purple, for: UIControlState.normal)
+                countRegional = 2
+            } else {
+                regionalHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countRegional = 3
+            }
+        }
+        
+        let currentHopewellText = userDefaults.object(forKey: "hopewell")
+        if let firstLabelHopewell = currentHopewellText as? String {
+            hopewellHospitalButtonText.setTitle(firstLabelHopewell, for: UIControlState.normal)
+            if firstLabelHopewell == "Open" {
+                hopewellHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countHopewell = 0
+            } else {
+                hopewellHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countHopewell = 1
+            }
+        }
+        
+        let currentNBText = userDefaults.object(forKey: "nb")
+        if let firstLabelNB = currentNBText as? String {
+            newBrunswickHospitalButtonText.setTitle(firstLabelNB, for: UIControlState.normal)
+            if firstLabelNB == "Open" {
+                newBrunswickHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countNewBrunswick = 0
+            } else if firstLabelNB == "Trauma Divert" {
+                newBrunswickHospitalButtonText.setTitleColor(UIColor.purple, for: UIControlState.normal)
+                countNewBrunswick = 1
+            } else {
+                newBrunswickHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countNewBrunswick = 2
+            }
+        }
+        
+        let currentHamiltonText = userDefaults.object(forKey: "hamilton")
+        if let firstLabelHamilton = currentHamiltonText as? String {
+            hamiltonHospitalButtonText.setTitle(firstLabelHamilton, for: UIControlState.normal)
+            if firstLabelHamilton == "Open" {
+                hamiltonHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countHamilton = 0
+            } else {
+                hamiltonHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countHamilton = 1
+            }
+        }
+        
+        let currentFrancisText = userDefaults.object(forKey: "francis")
+        if let firstLabelFrancis = currentFrancisText as? String {
+            francisHospitalButtonText.setTitle(firstLabelFrancis, for: UIControlState.normal)
+            if firstLabelFrancis == "Open" {
+                francisHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countFrancis = 0
+            } else {
+                francisHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countFrancis = 1
+            }
+        }
+        
+        let currentPetersText = userDefaults.object(forKey: "peters")
+        if let firstLabelPeters = currentPetersText as? String {
+            petersHospitalButtonText.setTitle(firstLabelPeters, for: UIControlState.normal)
+            if firstLabelPeters == "Open" {
+                petersHospitalButtonText.setTitleColor(UIColor.green, for: UIControlState.normal)
+                countPeters = 0
+            } else {
+                petersHospitalButtonText.setTitleColor(UIColor.red, for: UIControlState.normal)
+                countPeters = 1
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
 }
-

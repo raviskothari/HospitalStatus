@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03114FCF200969E200479FF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03114FCE200969E200479FF4 /* GoogleService-Info.plist */; };
 		0323240D1EF9F3950090214E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323240C1EF9F3950090214E /* AppDelegate.swift */; };
 		0323240F1EF9F3950090214E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0323240E1EF9F3950090214E /* ViewController.swift */; };
 		032324121EF9F3950090214E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032324101EF9F3950090214E /* Main.storyboard */; };
@@ -14,9 +15,11 @@
 		032324171EF9F3950090214E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032324151EF9F3950090214E /* LaunchScreen.storyboard */; };
 		0326EC5E2006C688001BC234 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0326EC5D2006C688001BC234 /* background.jpeg */; };
 		0326EC602006CA5C001BC234 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0326EC5F2006CA5B001BC234 /* icon.jpg */; };
+		59B80B887060C1505E1FA6C2 /* Pods_HospitalStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF930A3B40AC8C54E00CFE0 /* Pods_HospitalStatus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03114FCE200969E200479FF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		032324091EF9F3950090214E /* HospitalStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0323240C1EF9F3950090214E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0323240E1EF9F3950090214E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		032324181EF9F3950090214E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0326EC5D2006C688001BC234 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = SOURCE_ROOT; };
 		0326EC5F2006CA5B001BC234 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = SOURCE_ROOT; };
+		3505FE2E7D69A0E76DC73EB0 /* Pods-HospitalStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalStatus/Pods-HospitalStatus.release.xcconfig"; sourceTree = "<group>"; };
+		51C27861B77272408EEA9278 /* Pods-HospitalStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HospitalStatus/Pods-HospitalStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		DAF930A3B40AC8C54E00CFE0 /* Pods_HospitalStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HospitalStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B80B887060C1505E1FA6C2 /* Pods_HospitalStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				0323240B1EF9F3950090214E /* HospitalStatus */,
 				0323240A1EF9F3950090214E /* Products */,
+				10A4F7B0C7851A71BF3D14E1 /* Pods */,
+				50735A87808747A0B33235D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +74,27 @@
 				032324101EF9F3950090214E /* Main.storyboard */,
 				032324131EF9F3950090214E /* Assets.xcassets */,
 				032324151EF9F3950090214E /* LaunchScreen.storyboard */,
+				03114FCE200969E200479FF4 /* GoogleService-Info.plist */,
 				032324181EF9F3950090214E /* Info.plist */,
 			);
 			path = HospitalStatus;
+			sourceTree = "<group>";
+		};
+		10A4F7B0C7851A71BF3D14E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51C27861B77272408EEA9278 /* Pods-HospitalStatus.debug.xcconfig */,
+				3505FE2E7D69A0E76DC73EB0 /* Pods-HospitalStatus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50735A87808747A0B33235D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF930A3B40AC8C54E00CFE0 /* Pods_HospitalStatus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0323241B1EF9F3950090214E /* Build configuration list for PBXNativeTarget "HospitalStatus" */;
 			buildPhases = (
+				B71DCA68CB93A9DA3756CF3E /* [CP] Check Pods Manifest.lock */,
 				032324051EF9F3950090214E /* Sources */,
 				032324061EF9F3950090214E /* Frameworks */,
 				032324071EF9F3950090214E /* Resources */,
+				EAA50FB42C78699FCBF407A6 /* [CP] Embed Pods Frameworks */,
+				7FB21462309B17D2FF608F6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,10 +166,69 @@
 				032324141EF9F3950090214E /* Assets.xcassets in Resources */,
 				032324121EF9F3950090214E /* Main.storyboard in Resources */,
 				0326EC5E2006C688001BC234 /* background.jpeg in Resources */,
+				03114FCF200969E200479FF4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FB21462309B17D2FF608F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HospitalStatus/Pods-HospitalStatus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71DCA68CB93A9DA3756CF3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HospitalStatus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA50FB42C78699FCBF407A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HospitalStatus/Pods-HospitalStatus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HospitalStatus/Pods-HospitalStatus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		032324051EF9F3950090214E /* Sources */ = {
@@ -280,6 +369,7 @@
 		};
 		0323241C1EF9F3950090214E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C27861B77272408EEA9278 /* Pods-HospitalStatus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R9ZDPF637J;
@@ -294,6 +384,7 @@
 		};
 		0323241D1EF9F3950090214E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3505FE2E7D69A0E76DC73EB0 /* Pods-HospitalStatus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R9ZDPF637J;

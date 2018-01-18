@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>287047626252-8q8jg5st9j2781dsggu41irktno35se5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.287047626252-8q8jg5st9j2781dsggu41irktno35se5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDTXTgvbgjOIDFWar0cSk5R__ydeD8EYz0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>287047626252</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.github.raviskothari.HospitalStatus</string>
+	<key>PROJECT_ID</key>
+	<string>hospital-status</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hospital-status.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:287047626252:ios:7499d94518c37a28</string>
+	<key>DATABASE_URL</key>
+	<string>https://hospital-status.firebaseio.com</string>
+</dict>
+</plist>
